@@ -56,7 +56,7 @@ gsap.to('.hero-number', {
 gsap.to('.hero p', {
     opacity: 1,
     y: 0,
-    duration: 0.8,
+    duration: 1.8,
     delay: 0.5
 });
 
@@ -65,7 +65,7 @@ gsap.to('.cta-buttons', {
     opacity: 1,
     y: 0,
     duration: 0.8,
-    delay: 0.7
+    delay: 2
 });
 
 

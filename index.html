@@ -20,7 +20,7 @@
     <nav id="nav">
         <div class="nav-container">
             <!-- Logo -->
-            <a href="#" class="logo">RJ</a>
+            <a href="#top" class="logo">RJ</a>
 
             <!-- Tlačítko pro mobilní menu -->
             <button class="menu-toggle" id="menuToggle" aria-label="Otevřít menu">
@@ -40,7 +40,7 @@
     </nav>
 
     <!-- Hlavní sekce (Hero) -->
-    <section class="hero">
+    <section class="hero" id="top">
         <div class="container">
             <div class="hero-grid">
                 <div>
@@ -61,22 +61,35 @@
     <section id="o-mne" class="about">
         <div class="container">
             <div class="section-label">FILOZOFIE</div>
-            <h2 class="section-title">DESIGN JE<br>O ŘEŠENÍ<br>PROBLÉMŮ</h2>
+            <h2 class="section-title">DESIGN JE O ŘEŠENÍ<br>PROBLÉMŮ PLYNULÉ INTERAKCE</h2>
             <div class="about-grid">
                 <div class="about-item">
-                    <div class="icon">━</div>
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="16" y="0" width="8" height="40" fill="#000" />
+                        </svg>
+                    </div>
                     <h3>PŘESNOST</h3>
                     <p>Každý pixel na svém místě. Preciznost v detailech vytváří dokonalý celek a odlišuje průměr od
                         výjimečnosti.</p>
                 </div>
                 <div class="about-item">
-                    <div class="icon">┃</div>
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0" y="16" width="40" height="8" fill="#000" />
+                        </svg>
+                    </div>
                     <h3>HARMONIE</h3>
                     <p>Rovnováha mezi formou a funkcí. Design, který nejen vypadá dobře, ale především dobře funguje pro
                         uživatele.</p>
                 </div>
                 <div class="about-item">
-                    <div class="icon">╋</div>
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="16" y="0" width="8" height="40" fill="#000" />
+                            <rect x="0" y="16" width="40" height="8" fill="#000" />
+                        </svg>
+                    </div>
                     <h3>SYSTÉM</h3>
                     <p>Konzistentní designový systém zajišťuje soudržnost napříč všemi platformami a zaručuje stabilitu
                         značky.</p>
@@ -84,7 +97,6 @@
             </div>
         </div>
     </section>
-
     <!-- Sekce Služby -->
     <section id="sluzby" class="services">
         <div class="container">
@@ -93,18 +105,48 @@
             <div class="services-list">
                 <div class="service-item">
                     <div class="service-number">01</div>
-                    <h3>WEB DESIGN</h3>
-                    <p>DESIGN · UX · PROTOTYPING</p>
+                    <h3>GRAPHIC DESIGN</h3>
+                    <p>VIZUÁLNÍ STYL · TYPOGRAFIE · KOMPOZICE</p>
                 </div>
                 <div class="service-item">
                     <div class="service-number">02</div>
-                    <h3>BRANDING</h3>
-                    <p>IDENTITY · GUIDELINES · STRATEGY</p>
+                    <h3>WEBDESIGN</h3>
+                    <p>RESPONZIVNÍ WEBY · UI LAYOUTY · STRUKTURA</p>
                 </div>
                 <div class="service-item">
                     <div class="service-number">03</div>
-                    <h3>DEVELOPMENT</h3>
-                    <p>CODE · ANIMATION · OPTIMIZATION</p>
+                    <h3>WIREFRAME & PLAN</h3>
+                    <p>INFORMAČNÍ ARCHITEKTURA · FUNKČNÍ NÁVRH</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">04</div>
+                    <h3>BRANDING</h3>
+                    <p>IDENTITA ZNAČKY · DESIGN SYSTÉM · PRAVIDLA</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">05</div>
+                    <h3>SEO OPTIMALIZACE</h3>
+                    <p>TECHNICKÉ SEO · STRUKTURA OBSAHU · VÝKON</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">06</div>
+                    <h3>UI & UX CONCEPT</h3>
+                    <p>UŽIVATELSKÉ TOKY · INTERAKCE · PROTOTYPY</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">07</div>
+                    <h3>PROJECT STRUCTURE</h3>
+                    <p>ARCHITEKTURA ŘEŠENÍ · LOGIKA · PŘEHLEDNOST</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">08</div>
+                    <h3>MARKETING & PROMO</h3>
+                    <p>ONLINE PREZENTACE · KAMPANĚ · DIGITÁLNÍ OBSAH</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">09</div>
+                    <h3>APP STRUCTURE MAP</h3>
+                    <p>VIZUALIZACE APLIKACE · TOK OBRAZOVEK</p>
                 </div>
             </div>
         </div>
@@ -155,9 +197,9 @@
     <!-- Kontaktní sekce -->
     <section id="kontakt" class="contact">
         <div class="container">
-            <div class="section-label">POJĎME TVOŘIT</div>
+            <div class="section-label">POJĎME buildit</div>
             <h2 class="section-title">MÁTE<br>PROJEKT?</h2>
-            <a href="mailto:ahoj@jakubruzicka.cz" class="contact-email">mail@ruzickajakubb.cz</a>
+            <a href="mailto:mail@ruzickajakub.cz" class="contact-email">mail@ruzickajakub.cz</a>
         </div>
     </section>
 
@@ -169,7 +211,7 @@
                 <p style="color: var(--gray); font-size: 0.9rem;">Webový designer<br>Praha, Česká republika</p>
             </div>
             <div class="footer-links">
-                <a href="#">BEware</a>
+                <a href="#">@</a>
             </div>
         </div>
     </footer>

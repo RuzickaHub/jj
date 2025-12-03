@@ -19,7 +19,8 @@
 /* Hladké scrollování celé stránky */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px; /* Odstup při scrollování na kotvu */
+    scroll-padding-top: 100px;
+    /* Odstup při scrollování na kotvu */
 }
 
 /* Základní styl těla dokumentu */
@@ -28,7 +29,8 @@ body {
     background: var(--black) !important;
     color: var(--white);
     line-height: 1.6;
-    overflow-x: hidden; /* Skrytí horizontálního scrollu */
+    overflow-x: hidden;
+    /* Skrytí horizontálního scrollu */
 }
 
 /* Styl pro zvýraznění textu (při označení myší) */
@@ -70,7 +72,8 @@ nav {
     right: 0;
     z-index: 1000;
     padding: 2rem 0;
-    mix-blend-mode: difference; /* Navigace je vždy viditelná na pozadí */
+    mix-blend-mode: difference;
+    /* Navigace je vždy viditelná na pozadí */
 }
 
 .nav-container {
@@ -89,6 +92,9 @@ nav {
     color: var(--white);
     text-decoration: none;
     letter-spacing: 3px;
+    /* background-color: var(--white);
+    padding: 2.5px 3px;
+    border-radius: 3px; */
 }
 
 /* Navigační odkazy */
@@ -114,7 +120,8 @@ nav {
 
 /* Tlačítko hamburger menu pro mobilní zařízení */
 .menu-toggle {
-    display: none; /* Skryté na desktopu */
+    display: none;
+    /* Skryté na desktopu */
     width: 30px;
     height: 24px;
     position: relative;
@@ -134,9 +141,18 @@ nav {
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.menu-toggle span:nth-child(1) { top: 0; }
-.menu-toggle span:nth-child(2) { top: 50%; transform: translateY(-50%); }
-.menu-toggle span:nth-child(3) { bottom: 0; }
+.menu-toggle span:nth-child(1) {
+    top: 0;
+}
+
+.menu-toggle span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-toggle span:nth-child(3) {
+    bottom: 0;
+}
 
 /* Transformace hamburger menu na křížek při aktivaci */
 .menu-toggle.active span:nth-child(1) {
@@ -157,12 +173,14 @@ nav {
 /* OBECNÉ SEKCE */
 /* ---------------------------------------- */
 section {
-    min-height: 100vh; /* Každá sekce má minimálně výšku obrazovky */
+    min-height: 100vh;
+    /* Každá sekce má minimálně výšku obrazovky */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 8rem 3rem;
-    scroll-margin-top: 80px; /* Odstup při scrollování na kotvu */
+    scroll-margin-top: 80px;
+    /* Odstup při scrollování na kotvu */
     position: relative;
 }
 
@@ -188,11 +206,13 @@ section {
 }
 
 .hero h1 {
-    font-size: clamp(4rem, 12vw, 10rem); /* Responsivní velikost písma */
+    font-size: clamp(4rem, 12vw, 10rem);
+    /* Responsivní velikost písma */
     font-weight: 900;
     line-height: 0.85;
     letter-spacing: -0.05em;
-    opacity: 0; /* Nulová opacity pro animaci */
+    opacity: 0;
+    /* Nulová opacity pro animaci */
     margin-bottom: 2rem;
 }
 
@@ -202,7 +222,8 @@ section {
     line-height: 1;
     opacity: 0.1;
     text-align: right;
-    opacity: 0; /* Nulová opacity pro animaci */
+    opacity: 0;
+    /* Nulová opacity pro animaci */
 }
 
 .hero p {
@@ -211,13 +232,15 @@ section {
     max-width: 500px;
     color: var(--gray);
     margin-bottom: 3rem;
-    opacity: 0; /* Nulová opacity pro animaci */
+    opacity: 0;
+    /* Nulová opacity pro animaci */
 }
 
 .cta-buttons {
     display: flex;
     gap: 1rem;
-    opacity: 0; /* Nulová opacity pro animaci */
+    opacity: 0;
+    /* Nulová opacity pro animaci */
 }
 
 /* Tlačítka */
@@ -263,7 +286,8 @@ section {
 
 .btn span {
     position: relative;
-    z-index: 1; /* Text nad efektem */
+    z-index: 1;
+    /* Text nad efektem */
 }
 
 
@@ -297,7 +321,8 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
-    background: var(--black); /* Černý podklad pro mezeru 1px */
+    background: var(--black);
+    /* Černý podklad pro mezeru 1px */
     margin-top: 4rem;
 }
 
@@ -305,7 +330,8 @@ section {
     background: var(--white);
     padding: 4rem 3rem;
     transition: all 0.4s ease;
-    opacity: 0; /* Nulová opacity pro animaci */
+    opacity: 0;
+    /* Nulová opacity pro animaci */
     cursor: pointer;
 }
 
@@ -360,7 +386,8 @@ section {
     align-items: center;
     cursor: pointer;
     transition: all 0.4s ease;
-    opacity: 0; /* Nulová opacity pro animaci */
+    opacity: 0;
+    /* Nulová opacity pro animaci */
 }
 
 /* Efekt při přejetí služby */
@@ -399,44 +426,53 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1px;
-    background: var(--black); /* Černý podklad pro mezeru 1px */
+    background: var(--black);
+    /* Černý podklad pro mezeru 1px */
     margin-top: 4rem;
 }
 
 .portfolio-item {
-    aspect-ratio: 1; /* Čtvercový poměr stran */
+    aspect-ratio: 1;
+    /* Čtvercový poměr stran */
     background: var(--white);
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    opacity: 0; /* Nulová opacity pro animaci */
+    opacity: 0;
+    /* Nulová opacity pro animaci */
 }
 
 /* Černé pozadí, které se objeví při hoveru */
 .portfolio-bg {
     position: absolute;
-    inset: 0; /* Zkrácený zápis pro top, right, bottom, left: 0 */
+    inset: 0;
+    /* Zkrácený zápis pro top, right, bottom, left: 0 */
     background: var(--black);
-    transform: scale(0); /* Skryté ve výchozím stavu */
+    transform: scale(0);
+    /* Skryté ve výchozím stavu */
     transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 .portfolio-item:hover .portfolio-bg {
-    transform: scale(1); /* Objeví se při hoveru */
+    transform: scale(1);
+    /* Objeví se při hoveru */
 }
 
 .portfolio-content {
     position: absolute;
-    inset: 3rem; /* Vnitřní odstup */
+    inset: 3rem;
+    /* Vnitřní odstup */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Obsah dole */
+    justify-content: flex-end;
+    /* Obsah dole */
     z-index: 1;
     transition: color 0.4s ease;
 }
 
 .portfolio-item:hover .portfolio-content {
-    color: var(--white); /* Bílý text při hoveru */
+    color: var(--white);
+    /* Bílý text při hoveru */
 }
 
 .portfolio-number {
@@ -477,20 +513,21 @@ section {
 .contact-email {
     display: inline-block;
     font-size: clamp(2rem, 5vw, 4rem);
-    font-weight: 900;
+    font-weight: 300;
     color: var(--white);
     text-decoration: none;
     letter-spacing: -2px;
-    border-bottom: 3px solid var(--white);
     padding-bottom: 0.5rem;
-    transition: all 0.4s ease;
-    opacity: 0; /* Nulová opacity pro animaci */
+    transition: all 1.2s ease;
+    opacity: 0;
+    /* Nulová opacity pro animaci */
 }
 
 .contact-email:hover {
     color: var(--gray);
     border-color: var(--gray);
-    letter-spacing: 2px;
+    letter-spacing: 7px;
+    font-weight: 900;
 }
 
 
@@ -542,6 +579,7 @@ footer {
 /* RESPONZIVITA - MOBILNÍ ZAŘÍZENÍ */
 /* ---------------------------------------- */
 @media (max-width: 968px) {
+
     /* Mobilní menu */
     .menu-toggle {
         display: flex;
@@ -557,13 +595,14 @@ footer {
         flex-direction: column;
         padding: 8rem 3rem 3rem;
         gap: 3rem;
-        background: rgba(0, 0, 0, 0.98);
+        background:var(--gray);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         transform: translateY(-100%);
         opacity: 0;
-        pointer-events: none; /* Zakázání interakce při skrytém menu */
-        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        pointer-events: none;
+        /* Zakázání interakce při skrytém menu */
+        transition: all 1s cubic-bezier(0.6, 0, 0.24, 1);
         mix-blend-mode: normal;
         justify-content: center;
         z-index: 1001;
@@ -595,12 +634,15 @@ footer {
     .nav-links.active a:nth-child(1) {
         transition-delay: 0.1s;
     }
+
     .nav-links.active a:nth-child(2) {
         transition-delay: 0.2s;
     }
+
     .nav-links.active a:nth-child(3) {
         transition-delay: 0.3s;
     }
+
     .nav-links.active a:nth-child(4) {
         transition-delay: 0.4s;
     }
@@ -629,7 +671,8 @@ footer {
     }
 
     body.menu-open {
-        overflow: hidden; /* Zakázání scrollování při otevřeném menu */
+        overflow: hidden;
+        /* Zakázání scrollování při otevřeném menu */
     }
 
     /* Úpravy sekcí pro mobil */
@@ -648,7 +691,8 @@ footer {
     }
 
     .hero-number {
-        order: -1; /* Číslo 2025 přesunuto nahoru */
+        order: -1;
+        /* Číslo 2025 přesunuto nahoru */
         text-align: left;
     }
 
