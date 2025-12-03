@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUZICKA Jakub</title>
+
+    <!-- Externí knihovny GSAP pro animace -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Externí CSS soubor -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigační menu -->
+    <nav id="nav">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="logo">RJ</a>
+
+            <!-- Tlačítko pro mobilní menu -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Otevřít menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigační odkazy -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#o-mne">O MNĚ</a></li>
+                <li><a href="#sluzby">SLUŽBY</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#kontakt">KONTAKT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hlavní sekce (Hero) -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <h1>RŮŽIČKA<br>JAKUB</h1>
+                    <p>Webový designer zaměřený na minimalistický přístup, čistou typografii a funkční design. Vytvářím
+                        digitální zážitky, které překvapují svou jednoduchostí.</p>
+                    <div class="cta-buttons">
+                        <a href="#kontakt" class="btn"><span>ZAČÍT PROJEKT</span></a>
+                        <a href="#portfolio" class="btn"><span>PRÁCE</span></a>
+                    </div>
+                </div>
+                <div class="hero-number">2025</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce O mně -->
+    <section id="o-mne" class="about">
+        <div class="container">
+            <div class="section-label">FILOZOFIE</div>
+            <h2 class="section-title">DESIGN JE<br>O ŘEŠENÍ<br>PROBLÉMŮ</h2>
+            <div class="about-grid">
+                <div class="about-item">
+                    <div class="icon">━</div>
+                    <h3>PŘESNOST</h3>
+                    <p>Každý pixel na svém místě. Preciznost v detailech vytváří dokonalý celek a odlišuje průměr od
+                        výjimečnosti.</p>
+                </div>
+                <div class="about-item">
+                    <div class="icon">┃</div>
+                    <h3>HARMONIE</h3>
+                    <p>Rovnováha mezi formou a funkcí. Design, který nejen vypadá dobře, ale především dobře funguje pro
+                        uživatele.</p>
+                </div>
+                <div class="about-item">
+                    <div class="icon">╋</div>
+                    <h3>SYSTÉM</h3>
+                    <p>Konzistentní designový systém zajišťuje soudržnost napříč všemi platformami a zaručuje stabilitu
+                        značky.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce Služby -->
+    <section id="sluzby" class="services">
+        <div class="container">
+            <div class="section-label">CO NABÍZÍM</div>
+            <h2 class="section-title">SLUŽBY</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-number">01</div>
+                    <h3>WEB DESIGN</h3>
+                    <p>DESIGN · UX · PROTOTYPING</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">02</div>
+                    <h3>BRANDING</h3>
+                    <p>IDENTITY · GUIDELINES · STRATEGY</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">03</div>
+                    <h3>DEVELOPMENT</h3>
+                    <p>CODE · ANIMATION · OPTIMIZATION</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-label">VYBRANÉ PROJEKTY</div>
+            <h2 class="section-title">PORTFOLIO</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-bg"></div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-number">01</div>
+                        <h3>MINIMAL<br>STUDIO</h3>
+                        <p>BRANDING · WEB</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-bg"></div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-number">02</div>
+                        <h3>E-COMMERCE<br>PLATFORM</h3>
+                        <p>UI/UX · DEV</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-bg"></div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-number">03</div>
+                        <h3>CREATIVE<br>LAB</h3>
+                        <p>WEB · IDENTITY</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-bg"></div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-number">04</div>
+                        <h3>APP<br>DASHBOARD</h3>
+                        <p>INTERFACE · UX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontaktní sekce -->
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <div class="section-label">POJĎME TVOŘIT</div>
+            <h2 class="section-title">MÁTE<br>PROJEKT?</h2>
+            <a href="mailto:ahoj@jakubruzicka.cz" class="contact-email">mail@ruzickajakubb.cz</a>
+        </div>
+    </section>
+
+    <!-- Patička -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>© 2025 JAKUB RŮŽIČKA</h4>
+                <p style="color: var(--gray); font-size: 0.9rem;">Webový designer<br>Praha, Česká republika</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">BEware</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Externí JavaScript soubor -->
+    <script src="script.js"></script>
+</body>
+
+</html>
