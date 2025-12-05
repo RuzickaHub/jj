@@ -10,8 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-    <!-- Externí CSS soubor -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Externí CSS soubory -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
@@ -20,7 +22,9 @@
     <nav id="nav">
         <div class="nav-container">
             <!-- Logo -->
-            <a href="#top" class="logo">RJ</a>
+            <a href="#top" class="logo">
+                <img src="img/logo.svg" alt="RJ Logo" width="32" height="32">
+            </a>
 
             <!-- Tlačítko pro mobilní menu -->
             <button class="menu-toggle" id="menuToggle" aria-label="Otevřít menu">
@@ -65,9 +69,7 @@
             <div class="about-grid">
                 <div class="about-item">
                     <div class="icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="16" y="0" width="8" height="40" fill="#000" />
-                        </svg>
+                        <img src="img/icon-precision.svg" alt="Přesnost" width="40" height="40">
                     </div>
                     <h3>PŘESNOST</h3>
                     <p>Každý pixel na svém místě. Preciznost v detailech vytváří dokonalý celek a odlišuje průměr od
@@ -75,9 +77,7 @@
                 </div>
                 <div class="about-item">
                     <div class="icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0" y="16" width="40" height="8" fill="#000" />
-                        </svg>
+                        <img src="img/icon-harmony.svg" alt="Harmonie" width="40" height="40">
                     </div>
                     <h3>HARMONIE</h3>
                     <p>Rovnováha mezi formou a funkcí. Design, který nejen vypadá dobře, ale především dobře funguje pro
@@ -85,10 +85,7 @@
                 </div>
                 <div class="about-item">
                     <div class="icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="16" y="0" width="8" height="40" fill="#000" />
-                            <rect x="0" y="16" width="40" height="8" fill="#000" />
-                        </svg>
+                        <img src="img/icon-system.svg" alt="Systém" width="40" height="40">
                     </div>
                     <h3>SYSTÉM</h3>
                     <p>Konzistentní designový systém zajišťuje soudržnost napříč všemi platformami a zaručuje stabilitu
@@ -97,6 +94,7 @@
             </div>
         </div>
     </section>
+
     <!-- Sekce Služby -->
     <section id="sluzby" class="services">
         <div class="container">
